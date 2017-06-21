@@ -1,0 +1,4 @@
+kill -9 `ps aux | grep -v grep | grep 'stunnel\|runserver' | awk '{print $2}'`
+stunnel4 stunnel/dev_https &
+python manage.py runserver&
+HTTPS=1 python manage.py runserver 8001
