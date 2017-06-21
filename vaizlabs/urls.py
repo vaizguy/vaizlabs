@@ -5,7 +5,7 @@ from django.contrib import admin
 urlpatterns = [
     # Home
     url(r'^$', 'vaizlabs.apps.home.views.home', name='home'),
-    url(r'^home$/', 'vaizlabs.apps.home.views.home', name='home'),
+    url(r'^home$', 'vaizlabs.apps.home.views.home', name='home'),
       
     # Blog 
     url(r'^blog', 'vaizlabs.apps.home.views.blog', name='blog'),

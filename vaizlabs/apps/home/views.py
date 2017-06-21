@@ -29,23 +29,25 @@ def home(request):
 ##-----------------------------------------------------------------##  
 def blog(request):
 
-    posts = Post.objects.all().order_by("-created")
-    paginator = Paginator(posts, 5)
+    #posts = Post.objects.all().order_by("-created")
+    posts = []
+    #paginator = Paginator(posts, 5)
 
-    try:
-        page = int(request.GET.get("page", '1'))
-    except ValueError:
-        print 'Could not get page 1 of blog.'
-        page = 1
+    #try:
+    #    page = int(request.GET.get("page", '1'))
+    #except ValueError:
+    #    print 'Could not get page 1 of blog.'
+    #    page = 1
 
-    try:
-        posts = paginator.page(page)
-    except (InvalidPage, EmptyPage):
-        print 'Received invalid or empty page.'
-        posts = paginator.page(paginator.num_pages)
+    #try:
+    #    posts = paginator.page(page)
+    #except (InvalidPage, EmptyPage):
+    #    print 'Received invalid or empty page.'
+    #    posts = paginator.page(paginator.num_pages)
 
     return render_to_response(
         'index.html',
+        #dict(SECTION_BLOG_ACTIVE=True, posts=posts, user=request.user),
         dict(SECTION_BLOG_ACTIVE=True, posts=posts, user=request.user),
         RequestContext(request)
     )
