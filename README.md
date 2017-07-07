@@ -7,5 +7,8 @@ This project is powered by [Django 1.8.1](http://www.djangoproject.com) and [Ope
 
 ## License
 
-This code is dedicated to the public domain to the maximum extent permitted by applicable law, pursuant to [CC0](http://creativecommons.org/publicdomain/zero/1.0/).
-![CC](https://creativecommons.org/images/deed/cc-logo.jpg)
+**The vaizlabs name and banner are not subject to the CC 4.0 license and are subject to copyright.**
+
+The underlying code for this website is dedicated to the public domain to the maximum extent permitted by applicable law, pursuant to [CC](https://creativecommons.org/licenses/by/4.0/legalcode). 
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
