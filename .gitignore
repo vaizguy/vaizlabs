@@ -64,7 +64,6 @@ target/
 *.sw[po]
 
 # stunnel keys
-stunnel
 *.pem
 *.cert
 *.key
